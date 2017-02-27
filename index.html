@@ -11,28 +11,27 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body class="gutter">
-  <header class="pad-t-2 pad-b max-length">
+  <div class="pad-t-2 pad-b max-length">
     <h1 class="exa not-bold">Want to go to Mars?</h1>
     <p class="mega">We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
-  </header>
-  <div class="push">
-    <h2 class="italic giga not-bold">Personal details</h2>
-  </div>
-  <form class="push-0" method="POST" action="https://formspree.io/bradlet@algonquincollege.com">
-    <div class="push">
-      <label for="name">Name</label>
-      <input id="name">
-    </div>
-    <div class="push">
-      <label for="number">Age</label>
-      <input id="number" type="number">
-    </div>
-    <div class="push">
-      <label for="email">Email</label>
-      <input id="email" type="email" placeholder="Request to join the mission">
-    </div>
-    <div class="push">
-          <label for="subject">Physical fitness</label>
+  <form class="push-0" method="POST" action="https://formspree.io/heff0021@algonquinlive.com">
+  <fieldset>
+    <legend class="italic giga not-bold">Personal details</legend>
+      <div class="grid">
+      <div class="unit unit-xs-1 s-1 m-1 l-1-2 xl-1-2 push">
+        <label for="name">Name</label>
+        <input id="name">
+      </div>
+      <div class="unit unit-x-s-1 s-1 m-1 l-1-2 xl-1-2 push">
+        <label for="number">Age</label>
+        <input id="number" type="number">
+      </div>
+      <div class="unit unit-x-s-1 s-1 m-1 l-1-2 xl-1-2 push">
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="Request to join the mission">
+      </div>
+      <div class="unit unit-x-s-1 s-1 m-1 l-1-2 xl-1-2 push">
+        <label for="subject">Physical fitness</label>
           <select id="subject">
             <option>Super-human</option>
             <option>Fit as a fiddle</option>
@@ -40,21 +39,22 @@
             <option>A little couch-potato-y</option>
           </select>
       </div>
-      <div class="push">
-        <label for="message">Address</label>
-        <textarea id="message"></textarea>
+      <div class="unit unit-x-s-1 s-1 m-1 l-1-2 xl-1-2 push">
+        <label for="address">Address</label>
+        <textarea id="address" name="address"></textarea>
       </div>
-      <div class="push">
-        <h2 class="italic giga">Mission statement</h2>
-      </div>
-      <div class="push">
+  </fieldset>
+  <fieldset>
+    <legend class="italic giga">Mission statement</legend>
+      <div class="unit unit-x-s-1 s-1 m-1 l-1-2 xl-1-2 push">
         <label for="message">Why do you want to go to Mars?</label>
-        <textarea id="message"></textarea>
+        <textarea id="message" name="message"></textarea>
       </div>
+  </fieldset>
       <div>
         <button class="btn" type="submit">Register for the trip!</button>
       </div>
     </form>
-
+  </div>
   </body>
-  </html>
+</html>
