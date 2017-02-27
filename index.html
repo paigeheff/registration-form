@@ -4,31 +4,31 @@
   <meta charset="utf-8">
   <title>Registration Form</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="/css/grid.css">
-  <link rel="stylesheet" href="/css/type.css">
-  <link rel="stylesheet" href="/css/modules.css">
-  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/type.css">
+  <link rel="stylesheet" href="css/modules.css">
+  <link rel="stylesheet" href="css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
-<body>
-  <header>
-    <h1>Want to go to Mars?</h1>
-    <p>We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
+<body class="gutter">
+  <header class="pad-t-2 pad-b max-length">
+    <h1 class="peta">Want to go to Mars?</h1>
+    <p class="mega">We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
   </header>
   <div>
-    <p>Personal details</p>
+    <h2 class="italic giga">Personal details</h2>
   </div>
-  <form>
-    <div>
+  <form class="push-0" method="POST" action="https://formspree.io/bradlet@algonquincollege.com">
+    <div class="push">
       <label for="name">Name</label>
       <input id="name">
     </div>
-    <div>
+    <div class="push">
       <label for="number">Age</label>
       <input id="number" type="number">
     </div>
-    <div>
-      <label for="email">Your email</label>
+    <div class="push">
+      <label for="email">Email</label>
       <input id="email" type="email" placeholder="me@me.com">
     </div>
     <div class="push">
@@ -40,9 +40,21 @@
             <option>A little couch-potato-y</option>
           </select>
       </div>
+      <div class="push">
+        <label for="message">Address</label>
+        <textarea id="message"></textarea>
+      </div>
+      <div class="push">
+        <h2 class="italic giga">Mission statement</h2>
+      </div>
+      <div class="push">
+        <label for="message">Why do you want to go to Mars?</label>
+        <textarea id="message"></textarea>
+      </div>
+      <div>
+        <button class="btn" type="submit">Register for the trip!</button>
+      </div>
+    </form>
 
-
-
-
-</body>
-</html>
+  </body>
+  </html>

@@ -2,6 +2,14 @@ html {
   font-family: 'Open Sans', sans-serif;
 }
 
+.btn {
+  background-color: #000;
+  border-radius: .75rem;
+  color: #fff;
+  border-style: none;
+  padding: 0.5em 0.75em;
+}
+
 @media only screen and (min-width: 60em) {
 
 
